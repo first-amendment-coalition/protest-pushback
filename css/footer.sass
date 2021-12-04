@@ -1,5 +1,5 @@
 // fonts
-$sans: Helvetica,Arial,sans-serif
+$sans: Helvetica, Arial, sans-serif
 
 // colors
 
@@ -39,37 +39,43 @@ ul
   padding-inline-start: 0
 
 .site-footer
-  background-color: $nearblack
+  background-color: (lighten($nearblack, 65%))
   padding: 45px 0 20px
   font-size: 1rem
   line-height: 1.2
   color: #737373
   z-index: 1000
   margin-top: 25px
-  > a
+  a
     border-bottom: 1px solid #737373 !important
+    color: #737373
+    &:active, &:focus, &:visited
+      color: #737373 !important
     &:hover
-      color: $blue !important
-      cursor: pointer
+      color: $blue
   hr
-    border-top-color: #bbb
+    border-top-color: #737373
     opacity: 0.5
     &.small
       margin: 20px 0
   h6
-    color: #ddd
+    color: #737373
     font-size: 1rem
     text-transform: uppercase
     margin-top: 5px
     letter-spacing: 1px
-    font-weight: 500
+    font-weight: 700
   p
     font-size: 1rem
-  a
-    color: #737373
-    &:hover
-      color: $blue
-      // text-decoration: none
+
+.hyperlink
+  background-color: (lighten($nearblack, 80%))
+  color: #737373
+  padding: 10px
+  text-align: center
+  &:hover
+    color: $blue !important
+    cursor: pointer
 
 .footer-links
   padding-left: 0
@@ -82,8 +88,8 @@ ul
     font-size: 16px
   > a
     border-bottom: 1px solid #737373 !important
-    color: #737373
-    &:active, &:focus, &:hover
+    color: #737373 !important
+    &:active, &:focus, &:hover, &:visited
       color: $blue
       text-decoration: none
   &.inline li
@@ -162,6 +168,8 @@ ul
       background-color: #00aced
     &.instagram:hover
       background-color: #FCAF45
+    &.linkedin:hover
+      background-color: #0072b1
 
 @media (max-width: 767px)
   .social-icons li.title
