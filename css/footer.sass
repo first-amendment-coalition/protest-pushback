@@ -1,0 +1,170 @@
+// fonts
+$sans: Helvetica,Arial,sans-serif
+
+// colors
+
+//LAist
+$blue: #0470C6
+
+// kpcc
+
+$medblue: #007397
+$deepblue: #003B5B
+$gold: #F3AA27
+$socalorange: #F87E21
+$pink: #F3567C
+$peach: #FC9A61
+$deeporange: #D15904
+
+$palegray: #F6F6F6
+$lightgray: #E8E8E8
+$medgray: #898989
+$darkgray: #363636
+$nearblack: #212121
+$white: #fff
+
+// darks
+
+$black33: #212121
+$black50: #323232
+$black66: #424242
+$black121: #797979
+$black215: #d7d7d7
+$black235: #ebebeb
+$black245: #f5f5f5
+
+
+ul
+  list-style: none
+  padding-inline-start: 0
+
+.site-footer
+  background-color: $nearblack
+  padding: 45px 0 20px
+  font-size: 1rem
+  line-height: 1.2
+  color: #737373
+  z-index: 1000
+  margin-top: 25px
+  > a
+    border-bottom: 1px solid #737373 !important
+    &:hover
+      color: $blue !important
+      cursor: pointer
+  hr
+    border-top-color: #bbb
+    opacity: 0.5
+    &.small
+      margin: 20px 0
+  h6
+    color: #ddd
+    font-size: 1rem
+    text-transform: uppercase
+    margin-top: 5px
+    letter-spacing: 1px
+    font-weight: 500
+  p
+    font-size: 1rem
+  a
+    color: #737373
+    &:hover
+      color: $blue
+      // text-decoration: none
+
+.footer-links
+  padding-left: 0
+  list-style: none
+  li
+    display: block
+    padding-bottom: 10px
+    margin: 0
+    list-style: none
+    font-size: 16px
+  > a
+    border-bottom: 1px solid #737373 !important
+    color: #737373
+    &:active, &:focus, &:hover
+      color: $blue
+      text-decoration: none
+  &.inline li
+    display: inline-block
+
+.site-footer .social-icons
+  text-align: right
+  li
+    margin-left: 0
+  a
+    width: 40px
+    height: 40px
+    line-height: 40px
+    margin-left: 3px
+    margin-right: 0
+    border-radius: 100%
+    background-color: #33353d
+
+.copyright-text
+  margin: 0
+  > a
+    border-bottom: 1px solid #737373 !important
+    &:hover
+      color: $blue !important
+      cursor: pointer
+
+@media (max-width: 991px)
+  .site-footer [class^=col-]
+    margin-bottom: 30px
+
+@media (max-width: 767px)
+  .site-footer
+    padding-bottom: 0
+    .copyright-text, .social-icons
+      text-align: center
+
+.social-icons
+  padding-left: 0
+  margin-bottom: 0
+  list-style: none
+  li
+    display: inline-block
+    margin-bottom: 4px
+    &.title
+      margin-right: 15px
+      text-transform: uppercase
+      color: #96a2b2
+      font-weight: 700
+      font-size: 1rem
+  a
+    background-color: #eceeef
+    color: #818a91
+    font-size: 1rem
+    display: inline-block
+    line-height: 1.2
+    width: 44px
+    height: 44px
+    text-align: center
+    margin-right: 8px
+    border-radius: 100%
+    -webkit-transition: all .2s linear
+    -o-transition: all .2s linear
+    transition: all 0.2s linear
+    &:active, &:focus, &:hover
+      color: #fff
+      background-color: $blue
+  &.size-sm a
+    line-height: 1.2
+    height: 34px
+    width: 34px
+    font-size: 1rem
+  a
+    &.facebook:hover
+      background-color: #3b5998
+    &.twitter:hover
+      background-color: #00aced
+    &.instagram:hover
+      background-color: #FCAF45
+
+@media (max-width: 767px)
+  .social-icons li.title
+    display: block
+    margin-right: 0
+    font-weight: 600

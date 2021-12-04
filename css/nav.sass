@@ -1,0 +1,281 @@
+// fonts
+$sans: Helvetica, Arial, sans-serif
+
+// colors
+
+// FAC
+$blue: #3278ff
+$red: #cc0033
+
+
+//LAist
+// $blue: #0470C6
+
+// kpcc
+
+$medblue: #007397
+$deepblue: #003B5B
+$gold: #F3AA27
+$socalorange: #F87E21
+$pink: #F3567C
+$peach: #FC9A61
+$deeporange: #D15904
+
+$palegray: #F6F6F6
+$lightgray: #E8E8E8
+$medgray: #898989
+$darkgray: #363636
+$nearblack: #212121
+$white: #fff
+
+// darks
+
+$black33: #212121
+$black50: #323232
+$black66: #424242
+$black121: #797979
+$black215: #d7d7d7
+$black235: #ebebeb
+$black245: #f5f5f5
+
+a
+  text-decoration: none !important
+
+#story-nav
+  z-index: 3000
+  position: fixed
+
+#laist-nav
+  z-index: 5000
+  position: fixed
+  top: 0
+
+.nav-area
+  display: flex
+  flex-flow: row wrap
+  align-items: stretch
+  margin-left: auto
+  margin-right: auto
+
+.topbar
+  top: 0
+  left: 0
+
+.sticky
+  position: fixed
+
+.navbar-container
+  background-color: $white
+  color: $nearblack
+  width: 100%
+
+.navbar
+  padding: 0
+  a
+    text-decoration: none !important
+    border: 0 !important
+  .logo
+    display: block
+    margin: 15px auto
+    // @media (max-width: 750px)
+    //   display: none
+  .mini-logo
+    padding-right: 15px
+
+.donate-join
+  // color: $white
+  // border: 2px solid $white
+  text-transform: uppercase
+  width: 100px
+  padding: 8px
+  height: 38px
+  margin: 15px
+  text-align: center
+  @media (max-width: 600px)
+    display: none
+  a
+    color: $white !important
+    border: 0 !important
+  &:hover
+    cursor: pointer
+    transition: 0.3s
+
+#join-fac
+  background-color: $blue
+
+#donate-fac
+  background-color: $red
+
+#donate-story
+  @media (max-width: 750px)
+    display: none
+
+#donate-takeaways
+  width: 97px
+  float: right
+  display: none
+
+.home-btn
+  background-color: $white
+  color: $nearblack
+  padding: 16px
+  margin: 0 10px
+  font-size: 1.8rem
+  border: none
+  &:hover
+    cursor: pointer
+
+.laist-dropdown
+  position: relative
+  display: inline-block
+
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: $lightgray
+  min-width: 160px
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+  z-index: 1
+  a
+    color: $nearblack
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+    &:hover
+      background-color: $nearblack
+      color: $white
+
+.laist-dropdown:hover
+  .dropdown-content
+    display: block
+  .home-btn
+    background-color: $medgray
+
+.project-title
+  padding: 25px 10px 10px 15px
+  @media (max-width: 750px)
+    width: 100%
+  .franchise-title
+    font-weight: 700
+    text-transform: uppercase
+  .story-title
+    font-weight: 400
+  .arrow
+    font-family: 'Font Awesome 5 Free'
+    font-size: 1.5rem
+    float: right
+    margin-top: -6px
+    padding: 3px
+    border-radius: 100%
+    width: 30px
+    margin-left: 10px
+    text-align: center
+    cursor: pointer
+
+.story-toc
+  display: inline-block
+  @media (max-width: 750px)
+    display: none
+
+.chapters-btn
+  float: right
+  margin-right: 5px
+  @media (min-width: 750px)
+    display: none
+  &:hover
+    cursor: pointer
+  .chapters
+    &:hover
+      cursor: pointer
+
+#menu-dropdown
+  position: fixed
+  z-index: 5000
+  width: 65%
+  max-width: 450px
+  top: 88px
+  left: 0
+  display: none
+  background-color: $nearblack
+  color: $white
+  @media (max-width: 750px)
+    top: 74px
+    width: 95%
+  .menu-item
+    margin-bottom: 4px
+    padding: 10px 10px 10px 20px
+    font-size: 1.1rem
+    font-weight: 500
+    font-family: $sans
+    border-top: 1px solid $white
+    &:hover
+      background-color: $blue
+      cursor: pointer
+    &.selected-menu
+      background-color: $blue
+  a:link, a:visited, a:active
+    color: $white
+    text-decoration: none
+    border-bottom: 1px solid $white
+    &.hover
+      background-color: $medgray
+
+@media only screen and (max-width: 720px)
+  .menu-dropdown
+    width: 95%
+
+/* Social media */
+
+.social-share
+  width: 320px
+  margin: 25px 0
+  // margin: 0 auto
+  // margin: 15px auto
+
+.social
+  padding: 8px
+  margin-right: 10px
+  width: 150px
+  margin: auto
+  overflow: hidden
+  display: inline-block
+  text-align: center
+
+.left-social
+  width: 75% !important
+  text-align: left !important
+  clear: both !important
+
+#fb-share
+  background-color: #3b5998
+
+#twitter-share
+  background-color: #00aced
+
+#email-share
+  background-color: $gold
+
+#fb-share, #twitter-share, #email-share
+  color: $white !important
+  padding: 5px 8px
+  font-size: 1rem
+  a
+    border: none
+    color: $white !important
+  &:hover
+    cursor: pointer
+    background-color: $medgray
+    transition: 0.3s
+
+/* progress bar */
+
+.progress-container
+  width: 100%
+  height: 8px
+  margin-top: 8px
+  background: $medgray
+
+.progress-bar
+  height: 8px
+  background: $blue
+  width: 0%
