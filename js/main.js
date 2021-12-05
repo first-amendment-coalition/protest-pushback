@@ -36,7 +36,6 @@ $(document).ready(function(){
 
 // Photo black-white fade to color effect
 
-
 function scrollInteractions() {
 	var $photoImg = $('.lede'); //pointer to lede img divs
 	var $windowHeight = $(window).height(); //getting the height of the window
@@ -62,8 +61,8 @@ function scrollInteractions() {
 				}
 				else {
 					if ($windowBottom - 100 > verticalPos) {
-            $("#lede-color").stop().fadeOut(150);
-            $("#lede-bw").stop().fadeIn(150);
+            $("#lede-color").fadeOut(150);
+            $("#lede-bw").fadeIn(150);
 						//$(this).addClass('show-photo-img');
 					}
 				}
