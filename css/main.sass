@@ -184,15 +184,19 @@ p
     border-radius: 40%
     // width: 30px
 
-/* tweet
-
-// .tweet
-//   border-radius: 3%
-//   border: 1px solid $black215
-//   padding: 20px 20px 0 20px
-//   margin-bottom: 35px
-//   .fab
-//     color: #00aced
+.refer
+  font-size: 0.9rem
+  color: $white
+  background-color: $red
+  padding: 25px 25px 10px 25px
+  margin: 20px 0
+  .desc
+    margin-top: -18px
+  a
+    color: $white !important
+    border-bottom: 2px solid $white !important
+    font-size: 1.2rem !important
+    font-weight: 600
 
 /* photos & cutlines
 
@@ -202,9 +206,11 @@ p
   font-size: 1rem
   margin: 0
 
-.photo-cutline
-  margin-bottom: 20px
-  padding-left: 0
+.alt-cutline
+  color: #898989
+  padding: 10px
+  font-size: 1rem
+  margin: 0
 
 .no-border
   border: 0
@@ -233,7 +239,7 @@ p
     margin-bottom: 10px
 
 .side-block
-  max-width: 300px
+  max-width: 200px
   width: 100%
   img
     margin: 0 0 0.3rem 0
@@ -250,6 +256,7 @@ p
 .mug
   img
     border-radius: 50%
+    width: 200px
   .cutline
     text-align: center
 
@@ -258,9 +265,6 @@ p
     float: none
     margin: 2rem auto
     width: 100%
-    // max-width: 650px
-  .graphic-block
-    max-width: 400px
 
 .wide-block
   margin: 2rem auto
@@ -270,20 +274,31 @@ p
   p.cutline
     padding: 0 2rem
 
-.double-block
-  max-width: 1100px
-  margin: 0 auto
-  img
-    float: left
-    margin: 2% 1% 1% 0
-    max-width: 48%
+// .lede
+//   display: block
+//   transition: all 1s
+//   opacity: 0
 
-.bottom-row img
-  margin-bottom: 0
+#lede-color
+  display: none
+  position: absolute
+  top: 0
+  left: 0
 
-#top-img img
-  width: 100%
-  margin: 90px 0 0 0
+// .double-block
+//   max-width: 1100px
+//   margin: 0 auto
+//   img
+//     float: left
+//     margin: 2% 1% 1% 0
+//     max-width: 48%
+
+// .bottom-row img
+//   margin-bottom: 0
+//
+// #top-img img
+//   width: 100%
+//   margin: 90px 0 0 0
 
 /* story pages
 
@@ -314,18 +329,18 @@ p
     padding: 10px
 
 .story-byline
-  text-transform: uppercase
   line-height: 1.3
-  padding-top: 10px
-  font-size: 1.3rem
-  font-weight: 700
+  padding: 20px 0 50px 0
+  font-size: 1.1rem
+  font-weight: 500
   text-align: left
+  font-style: none
 
 .story-pubdate
   font-size: 1rem
   // text-transform: uppercase
   line-height: 1.3
-  padding: 25px 0
+  padding: 25px 0 10px 0
   font-weight: 600
   text-align: left
 
@@ -357,8 +372,8 @@ h1.title
   font-weight: 700
   padding-top: 5px
   line-height: 1.3
-  text-align: center
-  text-transform: uppercase
+  text-align: left
+  // text-transform: uppercase
 
 @media (max-width: 650px)
   .story-container
@@ -402,6 +417,11 @@ h1.title
 
 .contrib-line
   font-style: italic
+  font-size: 1rem
+  line-height: 1.3
+
+.editors-note
+  // font-style: italic
   font-size: 1rem
   line-height: 1.3
 
