@@ -54,14 +54,14 @@ function scrollInteractions() {
 				var verticalPos = $(this).offset().top;
 				if (windowWidth > 700) {
 					if ($windowBottom - 520 > verticalPos) {
-            $("#lede-bw").stop().fadeOut(150);
+            $("#lede-bw").hide();
             $("#lede-color").stop().fadeIn(150);
 						//$(this).addClass('show-photo-img');
 					}
 				}
 				else {
 					if ($windowBottom - 100 > verticalPos) {
-            $("#lede-color").fadeOut(150);
+            $("#lede-color").hide();
             $("#lede-bw").fadeIn(150);
 						//$(this).addClass('show-photo-img');
 					}
