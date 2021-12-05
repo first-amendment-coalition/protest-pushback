@@ -134,6 +134,13 @@ p {
 .intro {
   width: 850px;
   margin: 0 auto;
+  padding-top: 30px;
+}
+
+@media (max-width: 850px) {
+  .intro {
+    width: 95%;
+  }
 }
 
 .available-here, .platforms {
@@ -182,7 +189,7 @@ p {
 .refer {
   font-size: 0.9rem;
   color: #fff;
-  background-color: #cc0033;
+  background-color: #f4b035;
   padding: 25px 25px 10px 25px;
   margin: 20px 0;
 }
@@ -199,7 +206,7 @@ p {
 }
 
 .cta {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.3;
 }
 
@@ -357,8 +364,8 @@ p {
 
 .story-byline {
   line-height: 1.3;
-  padding: 20px 0 50px 0;
-  font-size: 1.1rem;
+  padding: 5px 0 20px 0;
+  font-size: 1rem;
   font-weight: 500;
   text-align: left;
   font-style: none;
@@ -374,8 +381,9 @@ p {
 
 .tagline {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   line-height: 1.3;
+  padding-bottom: 10px;
 }
 
 h1.title {
