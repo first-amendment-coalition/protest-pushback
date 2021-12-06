@@ -7,7 +7,7 @@ a {
   position: fixed;
 }
 
-#laist-nav {
+#fac-nav {
   z-index: 5000;
   position: fixed;
   top: 0;
@@ -112,7 +112,7 @@ a {
   cursor: pointer;
 }
 
-.laist-dropdown {
+.fac-dropdown {
   position: relative;
   display: inline-block;
 }
@@ -138,11 +138,11 @@ a {
   color: #fff;
 }
 
-.laist-dropdown:hover .dropdown-content {
+.fac-dropdown:hover .dropdown-content {
   display: block;
 }
 
-.laist-dropdown:hover .home-btn {
+.fac-dropdown:hover .home-btn {
   background-color: #898989;
 }
 

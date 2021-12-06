@@ -98,13 +98,6 @@ p {
   width: 195px !important;
 }
 
-.dateline {
-  font-size: 1.2rem;
-  font-style: italic;
-  font-weight: 700;
-  padding-bottom: 30px;
-}
-
 .dropcap {
   font-size: 16px;
   line-height: 1.3;
@@ -374,8 +367,8 @@ p {
 .story-pubdate {
   font-size: 1rem;
   line-height: 1.3;
-  padding: 25px 0 10px 0;
-  font-weight: 600;
+  padding: 5px 0 10px 0;
+  font-style: italic;
   text-align: left;
 }
 
